@@ -1,6 +1,8 @@
 # vectorpusher
 
-A tiny, single-slider CLIP-conditioning node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) that “nudges” token embeddings toward semantically related neighbors while capping angular drift. Given your prompt tokens, **vectorpusher** finds the most similar embeddings in the CLIP vocabulary and moves each token a small, bounded step toward a softmax-weighted average of those neighbors—preserving the token’s magnitude to avoid destabilizing downstream layers. 
+A tiny, single-slider CLIP-conditioning node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) that “nudges” token embeddings toward semantically related neighbors while capping angular drift.
+
+Given your prompt tokens, **vectorpusher** finds the most similar embeddings in the CLIP vocabulary and moves each token a small, bounded step toward a softmax-weighted average of those neighbors, preserving the token’s magnitude to avoid destabilizing downstream layers. 
 
 ## Install
 
@@ -41,6 +43,7 @@ Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 ## Credits
 
 * **Inspiration:** [Extraltodeus/Vector_Sculptor_ComfyUI](https://github.com/Extraltodeus/Vector_Sculptor_ComfyUI)
+
 
 
 

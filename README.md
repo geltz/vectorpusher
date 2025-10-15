@@ -1,6 +1,6 @@
 # vectorpusher
 
-A tiny, single-slider CLIP-conditioning node that “nudges” token embeddings toward semantically related neighbors while capping angular drift. Inspired by (but simplified from) [Extraltodeus/Vector_Sculptor_ComfyUI](https://github.com/Extraltodeus/Vector_Sculptor_ComfyUI).
+A tiny, single-slider CLIP-conditioning node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) that “nudges” token embeddings toward semantically related neighbors while capping angular drift. Inspired by (but simplified from) [Extraltodeus/Vector_Sculptor_ComfyUI](https://github.com/Extraltodeus/Vector_Sculptor_ComfyUI).
 
 ## What
 
@@ -8,10 +8,11 @@ Given your prompt tokens, **vectorpusher** finds the most similar embeddings in 
 
 ## Install
 
-1. Create a folder: `ComfyUI/custom_nodes/vectorpusher/`
-2. Put your `__init__.py` (the node file) inside it.
-3. Start/Reload ComfyUI. The node appears as **“vectorpusher”** under `conditioning`.
-   (It exports `NODE_CLASS_MAPPINGS` and `NODE_DISPLAY_NAME_MAPPINGS`.) 
+Clone this repo into your custom_nodes folder.
+```bash
+git clone https://github.com/geltz/vectorpusher
+```
+Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 
 ## Usage
 
@@ -51,3 +52,4 @@ Given your prompt tokens, **vectorpusher** finds the most similar embeddings in 
 * **Inspiration:** [Extraltodeus/Vector_Sculptor_ComfyUI](https://github.com/Extraltodeus/Vector_Sculptor_ComfyUI)
 
 * **This implementation:** minimal, one-knob design and trust-region update derived from the math above.
+

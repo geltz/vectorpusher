@@ -16,7 +16,7 @@ Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 
 ## Usage
 
-1. Drop **vectorpusher** before your conditioning hits the sampler.
+1. Enter your prompt into the node as a drop-in replacement.
 2. Connect:
 
    * `clip`: your model’s CLIP
@@ -49,6 +49,7 @@ Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 ## Credits
 
 * **Inspiration:** [Extraltodeus/Vector_Sculptor_ComfyUI](https://github.com/Extraltodeus/Vector_Sculptor_ComfyUI)
+
 
 
 

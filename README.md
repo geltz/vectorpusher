@@ -2,7 +2,7 @@
 
 A tiny, single-slider CLIP-conditioning node for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) that “nudges” token embeddings toward semantically related neighbors while capping angular drift.
 
-## What
+## Description
 
 Given your prompt tokens, **vectorpusher** finds the most similar embeddings in the CLIP vocabulary and moves each token a small, bounded step toward a softmax-weighted average of those neighbors—preserving the token’s magnitude to avoid destabilizing downstream layers. 
 
@@ -36,10 +36,6 @@ Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 * **Single slider scheduling:** `sculpt_strength` smoothly sets (K, \tau, \text{step}, \theta_{\max}) via simple monotone schedules. 
 * **Branch-aware scaling:** On SDXL, the g-branch gets a mild boost but is hard-clamped to safe range. 
 
-## Defaults
-
-* 0.5 is a good value.
-
 ## Tips
 
 * Higher strength can improve adherence to “nearby” concepts but may reduce prompt contrast. If results drift, lower the slider.
@@ -49,7 +45,6 @@ Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 ## Credits
 
 * **Inspiration:** [Extraltodeus/Vector_Sculptor_ComfyUI](https://github.com/Extraltodeus/Vector_Sculptor_ComfyUI)
-
 
 
 

@@ -36,10 +36,9 @@ Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 * **Single slider scheduling:** `sculpt_strength` smoothly sets (K, \tau, \text{step}, \theta_{\max}) via simple monotone schedules. 
 * **Branch-aware scaling:** On SDXL, the g-branch gets a mild boost but is hard-clamped to safe range. 
 
-## Values
+## Defaults
 
-* Stylized/art prompts: `0.6–1.0`
-* Photographic/specific prompts: `0.3–0.6`
+* 0.5 is a good value.
 
 ## Tips
 
@@ -52,4 +51,5 @@ Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 * **Inspiration:** [Extraltodeus/Vector_Sculptor_ComfyUI](https://github.com/Extraltodeus/Vector_Sculptor_ComfyUI)
 
 * **This implementation:** minimal, one-knob design and trust-region update derived from the math above.
+
 

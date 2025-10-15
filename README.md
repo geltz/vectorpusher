@@ -26,7 +26,7 @@ Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 
 ## Interface
 
-* **sculpt_strength** *(float, 0→1)* — the only control. Higher values increase neighbor count, sharpen similarity weighting, enlarge the step, and relax the angle cap. Defaults to 1.0 and is clamped in-node per branch logic.  
+* **sculpt_strength** *(float, 0→1)* — the only control. Higher values increase neighbor count, sharpen similarity weighting, enlarge the step, and relax the angle cap. Defaults to 0.5 and is clamped in-node per branch logic.  
 
 ## Math
 
@@ -51,5 +51,6 @@ Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 * **Inspiration:** [Extraltodeus/Vector_Sculptor_ComfyUI](https://github.com/Extraltodeus/Vector_Sculptor_ComfyUI)
 
 * **This implementation:** minimal, one-knob design and trust-region update derived from the math above.
+
 
 

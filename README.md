@@ -50,8 +50,6 @@ Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 
 * **Inspiration:** [Extraltodeus/Vector_Sculptor_ComfyUI](https://github.com/Extraltodeus/Vector_Sculptor_ComfyUI)
 
-* **This implementation:** minimal, one-knob design and trust-region update derived from the math above.
-
 
 
 

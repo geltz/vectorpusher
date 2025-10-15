@@ -73,7 +73,7 @@ def vectorpusher_tokens_minimal(clip,text,sculpt_strength):
 class vectorpusher:
     @classmethod
     def INPUT_TYPES(s):
-        return {"required":{"clip":("CLIP",),"text":("STRING",{"multiline":True}),"sculpt_strength":("FLOAT",{"default":1.0,"min":0.0,"max":1.0,"step":0.01})}}
+        return {"required":{"clip":("CLIP",),"text":("STRING",{"multiline":True}),"sculpt_strength":("FLOAT",{"default":0.5,"min":0.0,"max":1.0,"step":0.01})}}
     RETURN_TYPES=("CONDITIONING","STRING")
     RETURN_NAMES=("Conditioning","Params")
     FUNCTION="exec"
@@ -96,3 +96,4 @@ def add_to_first_if_shorter(conditioning1,conditioning2,x=0):
 
 NODE_CLASS_MAPPINGS={"vectorpusher":vectorpusher}
 NODE_DISPLAY_NAME_MAPPINGS={"vectorpusher":"vectorpusher"}
+

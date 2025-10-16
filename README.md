@@ -10,7 +10,7 @@ git clone https://github.com/geltz/vectorpusher
 ```
 Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 
-**How it works**
+# Mechanism
 
 * Attention-gated pushing: tokens with higher attention are moved a bit more; low-impact tokens stay close to the original. 
 * Confidence-adaptive strength: if neighbor weights are sharp (low entropy), steps are stronger; if diffuse, steps shrink to avoid noise. 
@@ -65,4 +65,5 @@ Implementation notes: embeddings and norms are computed on the active torch devi
 ## Credits
 
 * **Inspiration:** [Extraltodeus/Vector_Sculptor_ComfyUI](https://github.com/Extraltodeus/Vector_Sculptor_ComfyUI)
+
 

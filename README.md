@@ -6,7 +6,7 @@ Given your prompt tokens, **vectorpusher** finds the most similar embeddings in 
 
 ## Install
 
-Clone this repo into your custom_nodes folder.
+Clone this repo into your `custom_nodes` directory.
 ```bash
 git clone https://github.com/geltz/vectorpusher
 ```
@@ -43,6 +43,7 @@ Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 ## Credits
 
 * **Inspiration:** [Extraltodeus/Vector_Sculptor_ComfyUI](https://github.com/Extraltodeus/Vector_Sculptor_ComfyUI)
+
 
 
 

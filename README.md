@@ -1,6 +1,6 @@
 # Description
 
-**vectorpusher** is a single-slider ComfyUI conditioning node that gently reshapes CLIP token embeddings before encoding, improving prompt adherence while preserving identity. For each token, the node looks up semantically close neighbors in the CLIP embedding table, computes a safe direction on the local manifold, and nudges the token a small, angle-capped amount. The slider (sculpt_strength) drives a schedule for the neighborhood size, temperature, step size, and angle cap. A small boost is applied to the “g” branch to better capture global style cues. Special tokens are skipped.
+**vectorpusher** is a single-slider [ComfyUI](https://github.com/comfyanonymous/ComfyUI) conditioning node that gently reshapes CLIP token embeddings before encoding, improving prompt adherence while preserving identity. For each token, the node looks up semantically close neighbors in the CLIP embedding table, computes a safe direction on the local manifold, and nudges the token a small, angle-capped amount. The slider (sculpt_strength) drives a schedule for the neighborhood size, temperature, step size, and angle cap. A small boost is applied to the “g” branch to better capture global style cues. Special tokens are skipped.
 
 ## Install
 
@@ -65,3 +65,4 @@ Implementation notes: embeddings and norms are computed on the active torch devi
 ## Credits
 
 * **Inspiration:** [Extraltodeus/Vector_Sculptor_ComfyUI](https://github.com/Extraltodeus/Vector_Sculptor_ComfyUI)
+

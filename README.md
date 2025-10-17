@@ -10,17 +10,7 @@ git clone https://github.com/geltz/vectorpusher
 ```
 Restart [ComfyUI](https://github.com/comfyanonymous/ComfyUI).
 
-# Mechanism
-
-* Attention-gated pushing: tokens with higher attention are moved a bit more; low-impact tokens stay close to the original. 
-* Confidence-adaptive strength: if neighbor weights are sharp (low entropy), steps are stronger; if diffuse, steps shrink to avoid noise. 
-* Winsorized neighbor weights: extreme similarities are clipped before softmax to prevent outliers from dominating. 
-* Multi-scale K blending: combines steps from small, medium, and large neighborhoods for both detail and stability. 
-* KL-budgeted step sizing: automatically reduces step magnitude to keep the neighbor distribution close to baseline, limiting semantic drift.  
-
-**Practical effect:** cleaner prompt compliance, stronger but stable style transfer, reduced over-editing, better robustness on noisy prompts, and minimal change when confidence is low. The whole edit stays within an angle cap to avoid runaway directions. 
-
-# Math
+## Math
 
 Let W be the CLIP token embedding table (rows are tokens). Let w0 be the original embedding vector for a token. Normalize rows and the token vector:
 
@@ -65,6 +55,7 @@ Implementation notes: embeddings and norms are computed on the active torch devi
 ## Credits
 
 * **Inspiration:** [Extraltodeus/Vector_Sculptor_ComfyUI](https://github.com/Extraltodeus/Vector_Sculptor_ComfyUI)
+
 
 
 
